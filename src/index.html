@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <main>
+      <form class="search">
+        <label for="search-bar">
+          Enter a US, UK, or Canadian zipcode, IP address, latitude/longitude
+          (decimal degree), or city name
+        </label>
+        <div>
+          <input id="search-bar" />
+          <button type="submit"><span>🔎</span></button>
+        </div>
+      </form>
+      <h2>
+        Results for
+        <span class="name">Fenton</span>, <span class="region">Missouri</span>,
+        <span class="country">United States of America</span>:
+      </h2>
+      <div class="current">
+        <div class="current-left">
+          <img src="https://cdn.weatherapi.com/weather/64x64/night/122.png" />
+          <p class="temperature">70</p>
+          <div class="units-toggle">
+            <button class="fahrenheit" type="button">°F</button>
+            <button class="celcius" type="button" disabled>°C</button>
+          </div>
+          <div class="additonal-info">
+            <p class="humidity">Humidity: <span>50</span>%</p>
+            <p class="feels-like">Feels like: <span>80</span>°</p>
+            <p class="wind">
+              Wind: <span class="wind-value">50</span>
+              <span class="wind-units">mph</span>
+            </p>
+          </div>
+        </div>
+        <div class="current-right">
+          <p class="day-time">Monday 10:00 AM</p>
+          <p class="description">Cloudy</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
