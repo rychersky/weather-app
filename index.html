@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <main>
+      <form class="search">
+        <label for="search-bar">
+          Enter a US, UK, or Canadian zipcode, IP address, latitude/longitude
+          (decimal degree), or city name
+        </label>
+        <div>
+          <input id="search-bar" />
+          <button type="submit"><span>🔎</span></button>
+          <p></p>
+        </div>
+      </form>
+      <div class="results" style="display: none">
+        <h2>
+          Results for
+          <span class="name"></span>, <span class="region"></span>
+          <span class="country"></span>:
+        </h2>
+        <div class="current">
+          <div class="current-left">
+            <img src="" />
+            <p class="temperature"></p>
+            <div class="units-toggle">
+              <button class="fahrenheit" type="button" disabled>°F</button>
+              <button class="celcius" type="button">°C</button>
+            </div>
+            <div class="additonal-info">
+              <p class="humidity">Humidity: <span></span>%</p>
+              <p class="feels-like">Feels like: <span></span>°</p>
+              <p class="wind">
+                Wind: <span class="wind-value"></span>
+                <span class="wind-units"></span>
+              </p>
+            </div>
+          </div>
+          <div class="current-right">
+            <p class="day-time"></p>
+            <p class="description"></p>
+          </div>
+        </div>
+        <div class="forecast"></div>
+      </div>
+    </main>
+  </body>
+</html>
